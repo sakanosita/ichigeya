@@ -1,6 +1,6 @@
 // migrations/2_deploy.js
-const SimpleToken = artifacts.require('SimpleToken');
+const MyFirstToken = artifacts.require('MyFirstToken');
 
 module.exports = async function (deployer) {
-  await deployer.deploy(SimpleToken, 'SimpleToken', 'SIM', '10000000000000000000000');
+  await deployer.deploy(MyFirstToken, 10000);
 };
