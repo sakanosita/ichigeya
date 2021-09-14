@@ -16,8 +16,7 @@ export default function () {
 
   var address = "0x5B0A7974Aeab510BB344e7f27e607841b4EC4C9f"; // コントラクトアドレス
 
-  // const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
-  const web3 = new Web3("ws://localhost:7545");
+  const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
 
   var contract = new web3.eth.Contract(abi, address);
   contract.methods.get().call(function(err,res){
